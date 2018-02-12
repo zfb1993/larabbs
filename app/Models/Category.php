@@ -7,7 +7,7 @@ use Illuminate\Database\Schema\Blueprint;
 
 class Category extends Model
 {
-    private $fillable = [
+    protected $fillable = [
         'name','description'
     ];
 
