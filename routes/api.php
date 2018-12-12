@@ -32,9 +32,9 @@ $api->version('v1',[
     //获取验证码
     $api->post('verificationsCode','VerificationCodesController@store')
     ->name('api.verificationCodes.store');
-    //用户注册
-    $api->post('users','UsersController@store')
-    ->name('api.users.store');
+    // 用户注册
+    $api->post('users', 'UsersController@store')
+        ->name('api.users.store');
 });
 
 
