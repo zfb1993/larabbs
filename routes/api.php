@@ -43,6 +43,9 @@ $api->version('v1',[
         //图片验证码
         $api->post('captchas','CaptchasController@store')
             ->name('api.captcha.store');
+        //授权登陆
+        $api->post('socials/{social_type}/authorizations','AuthorizationsController@socialStore')
+            ->name('api.socials.authorizations.store');
     });
 
 });
